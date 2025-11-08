@@ -18,18 +18,18 @@ def is_valid_ip(ip):
 
 # Main Variables 
 
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
-USERNAME = environ.get('USERNAME', "https://telegram.me/Silicon_Official")
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/LuciferCinema')
+API_ID = int(environ.get('API_ID', '23903140'))
+API_HASH = environ.get('API_HASH', '579f1bcf3eac1660d81ef34b09906012')
+BOT_TOKEN = environ.get('BOT_TOKEN', '8562750494:AAHPPHzTiWgGY0frZ2IHVo7U7nE3e7GdvOY')
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1416433622').split()]
+USERNAME = environ.get('USERNAME', "https://telegram.me/OveshBossOfficial")
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1003166629808'))
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/OnlyBossMoviesGroup')
 
 # Pics 
 
 QR_CODE = environ.get('QR_CODE', 'https://graph.org/file/ccb9db43e62a2e524928e.jpg')
-START_IMG = environ.get('START_IMG', 'https://i.ibb.co/LdT5fdJY/photo-2025-08-13-01-12-38-7537871916074270724.jpg')
+START_IMG = environ.get('START_IMG', 'https://graph.org/file/12082ded31fcbd636e36b-fd8a81ec21d987a646.jpg')
 FSUB_PICS = (environ.get('FSUB_PICS', 'https://graph.org/file/7478ff3eac37f4329c3d8.jpg https://graph.org/file/56b5deb73f3b132e2bb73.jpg')).split() 
 
 # File Limit
@@ -40,7 +40,7 @@ FILES_LIMIT = int(environ.get("FREE_FILES", "3")) #No. of File User Gets In Free
 # Database Settings
 
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://@cluster0.mongodb.net/?retryWrites=true&w=majority")
-FILES_DATABASE_URL = environ.get('FILES_DATABASE_URL', "mongodb+srv://@cluster0.mongodb.net/?retryWrites=true&w=majority") # For Files
+FILES_DATABASE_URL = environ.get('FILES_DATABASE_URL', "mongodb+srv://Ovesh:ovesh.boss@ovesh.95jpp8g.mongodb.net/?retryWrites=true&w=majority&appName=Ovesh") # For Files
 SECOND_FILES_DATABASE_URL = environ.get('SECOND_FILES_DATABASE_URL', "") # 2nd DB For Files
 DATABASE_NAME = environ.get('DATABASE_NAME', "Silicon")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Silicon_Files')
@@ -48,8 +48,8 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Silicon_Files')
 # Verify/Shortlink Settings 
 
 IS_VERIFY = is_enabled('IS_VERIFY', True)
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', ''))
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', ''))
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1003018720744'))
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1003162160990'))
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/Silicon_Bot_Update")
 TUTORIAL2 = environ.get("TUTORIAL2", "https://t.me/Silicon_Bot_Update")
 TUTORIAL3 = environ.get("TUTORIAL3", "https://t.me/Silicon_Bot_Update")
@@ -66,22 +66,22 @@ THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "14400"))
 # Force Subscribe Settings 
 
 auth_req_channels = environ.get("AUTH_REQ_CHANNELS", "-100")# requst to join Channel for force sub (make sure bot is admin) only for bot ADMINS  
-auth_channels = environ.get("AUTH_CHANNELS", "-100")# Channels for force sub (make sure bot is admin)
+auth_channels = environ.get("AUTH_CHANNELS", "-1002342243776")# Channels for force sub (make sure bot is admin)
 AUTH_REQ_CHANNELS = [int(ch) for ch in auth_req_channels.split() if ch and id_pattern.match(ch)] 
 AUTH_CHANNELS = [int(ch) for ch in auth_channels.split() if ch and id_pattern.match(ch)]
 
 # Channels
 
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1001816697837'))
-request_channel = environ.get('REQUEST_CHANNEL', '-1002470027489')
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002607722977'))
+request_channel = environ.get('REQUEST_CHANNEL', '-1003280987211')
 REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(request_channel) else None
 
 # Movie Update Notification Settings/ Auto Index Settings
 
 MOVIE_UPDATE_NOTIFICATION = bool(environ.get('MOVIE_UPDATE_NOTIFICATION', False))  # Notification On (True) / Off (False)
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', ''))  # Notification of sent to your channel
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1003292206867'))  # Notification of sent to your channel
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()] # Auto Index Channel
-DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','')) # Channel to delete file from DB
+DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1003276911059')) # Channel to delete file from DB
 IMAGE_FETCH = bool(environ.get('IMAGE_FETCH', True))  # On (True) / Off (False)
 LINK_PREVIEW = bool(environ.get('LINK_PREVIEW', False)) # Shows link preview in notification msg instead of image
 ABOVE_PREVIEW = bool(environ.get('ABOVE_PREVIEW', True)) # Shows link preview above the text in notification msg if True else below the msg
@@ -115,7 +115,7 @@ SEASONS = [("sᴇᴀsᴏɴ 𝟷", "s01"), ("sᴇᴀsᴏɴ 𝟸", "s02"), ("sᴇ�
 # Stream Settings 
 
 IS_PREMIUM_STREAM = is_enabled('IS_PREMIUM_STREAM', False) # True To Allow Stream For Premium User Only
-BIN_CHANNEL = environ.get("BIN_CHANNEL", "") # Channel Where Files sent For stream
+BIN_CHANNEL = environ.get("BIN_CHANNEL", "-1003169061900") # Channel Where Files sent For stream
 if len(BIN_CHANNEL) == 0:
     print('Error BIN_CHANNEL is missing, exiting now')
     exit()

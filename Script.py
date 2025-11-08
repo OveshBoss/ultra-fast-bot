@@ -61,7 +61,7 @@ sᴇɴᴅ ᴍᴇ ᴀɴʏ ᴍᴏᴠɪᴇ ᴏʀ sᴇʀɪᴇs ɴᴀᴍᴇ ᴀɴᴅ 
 🍿 ᴅᴀᴛᴀʙᴀsᴇ : <a href="https://www.mongodb.com/">ᴍᴏɴɢᴏ ᴅʙ</a>
 🐍 ᴄᴏᴅɪɴɢ ᴍᴜsᴄʟᴇs : <a href="https://www.python.org/">ᴘʏᴛʜᴏɴ 𝟹</a>
 📚 ʟɪʙʀᴀʀʏ: <a href="https://github.com/Mayuri-Chan/pyrofork">ᴘʏʀᴏꜰᴏʀᴋ</a>
-👨‍💻 ᴏᴡɴᴇʀ : <a href="https://telegram.me/Silicon_Official">ѕιℓι¢ση σƒƒ¢ιαℓ</a>
+👨‍💻 ᴏᴡɴᴇʀ : <a href="https://telegram.me/Ovesh_Boss">デ Oᴠᴇsʜ ʙᴏss デ</a>
 🔧 ʙᴜɪʟᴅ sᴛᴀᴛᴜs : ᴠ𝟷.𝟶.𝟷
 💥 ʀᴇᴘᴏ : <a href="https://github.com/Silicon-Developer/Auto-Filter-Bot">ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>
 </b></blockquote>"""
@@ -142,7 +142,7 @@ sᴇɴᴅ ᴍᴇ ᴀɴʏ ᴍᴏᴠɪᴇ ᴏʀ sᴇʀɪᴇs ɴᴀᴍᴇ ᴀɴᴅ 
 ❗️ ʟᴀɴɢᴜᴀɢᴇ - {languages}</b>
 """
 
-    FILE_CAPTION = """<b>{file_name}\n\nUploaded By: <a href="https://t.me/Silicon_Bot_Update">Silicon Botz</a></b>"""
+    FILE_CAPTION = """<b>{file_name}\n\nUploaded By: <a href="https://t.me/OveshBossOfficial">Silicon Botz</a></b>"""
 
     MOVIE_UPDATE_NOTIFY_TXT = """
 </b><a href={poster_url}>📥</a><a href={imdb_url}>New {tag} Added</a></b>
